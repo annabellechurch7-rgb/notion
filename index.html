@@ -26,10 +26,12 @@
             margin: auto;
             border: 3px solid #000000;
             border-radius: 5px;
+            box-shadow: 2px 2px 1px 0px #000000;
 
         }
 
-           
+        
+
         .date {
       
             font-family: monospace;
@@ -43,11 +45,11 @@
 
         .time {
             display: inline-block;
-            min-width: 30px;
+            min-width: 20px;
         }
 
         .colon {
-            font-size: 2em;
+            font-size: 1em;
             display: inline-block;
         }
 
@@ -59,15 +61,8 @@
     </style>
 </head>
 <body>
-
-
-
-
-<div class="container>">
-    <div class="widget">
-
-            <div class="greet" id="greet"></div>
-
+    <div class="container>">
+        <div class="widget">
                 <div class="date" id="date"></div>
                 <div class="clock">
                     <div class="time" id="hour"></div>
@@ -140,7 +135,6 @@
 
     function dispalyWidget() {
         var today = new Date();
-        dispalyGreetings(today);
         dispalyDate(today);
         dispalyClock(today);
         setTimeout(dispalyWidget, 500);
